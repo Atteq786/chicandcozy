@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/product.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato:wght@100;400&display=swap" rel="stylesheet">
+
+    <title>Chic&Cozy - Product Page</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar bg">
+        <ul class="links-container">
+            <li class="link-items"><a href="#" class="links active">Home</a></li>
+            <li class="link-items"><a href="#" class="links">Products</a></li>
+            <li class="link-items"><a href="#" class="links">About</a></li>
+            <li class="link-items"><a href="#" class="links">Contact</a></li>
+        </ul>
+        <div class="user-interactions">
+            <div class="cart">
+                <img src="/public/img/cart.png" class="cart-icon" alt="Cart">
+                <span class="cart-item-count">00</span>
+            </div>
+            <div class="user">
+                <img src="/public/img/user.png" class="user-icon" alt="User">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail -->
+     <section class="product-section">
+        <img src="/public/img/product-image.png" class="product-image" alt="">
+        <div class="product-detail">
+            <h1 class="product-title">Premium Sofa</h1>
+            <p class="product des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod numquam rem aspernatur atque error molestias.</p>
+            <div class="ratings">
+                <img src="/public/img/fill star.png" class="star" alt="">
+                <img src="/public/img/fill star.png" class="star" alt="">
+                <img src="/public/img/fill star.png" class="star" alt="">
+                <img src="/public/img/fill star.png" class="star" alt="">
+                <img src="/public/img/no fill star.png" class="star" alt="">
+                <span class="rating-count">5,029 reviews</span>
+            </div>
+                <p class="price">$799</p>
+                <div class="btn-container">
+                    <button class="product-btn buy-btn">buy now</button>
+                    <button class="product-btn cart-btn">add to cart</button>
+                </div>
+        </div>
+     </section>
+
+     <!-- Detail Des -->
+      <section class="detail-des">
+        <h1 class="section-title">Details</h1>
+        <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore enim officiis asperiores, totam vero nam consequuntur deserunt pariatur vitae minus quae maxime excepturi ratione in maiores nisi voluptatibus repellat magni repellendus vel accusantium nulla quo! Ea placeat quidem veritatis, obcaecati reiciendis veniam est asperiores iusto ducimus dicta temporibus eligendi molestias suscipit repellendus odio possimus illum sapiente quo ipsa neque? Similique temporibus porro maiores quas eum facilis obcaecati, nihil beatae sequi eligendi ea doloremque illum dolorem quo iusto numquam incidunt soluta. Consequuntur explicabo distinctio sapiente assumenda voluptate velit doloremque ipsam non nostrum molestias harum, aliquid eos quisquam itaque libero. Commodi, quo.
+            <br><br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, iusto velit! Reprehenderit deleniti quasi totam. Veniam, tempore eveniet. Libero hic facilis voluptatibus ipsam dolorem ex, sapiente aliquid perferendis qui quo eos sequi repellendus tenetur rerum eaque. Fuga ipsam porro id tempora molestiae est culpa rerum pariatur perspiciatis facere veniam, optio ullam ab dolores sed illum impedit. Voluptates aliquid voluptatum eius quisquam atque labore blanditiis incidunt, fugit amet cumque consequuntur neque laudantium architecto eligendi laborum, omnis alias impedit ad dolorum! Porro magni, dolorum eveniet nulla obcaecati temporibus fuga sed et id. Commodi deleniti quisquam consequuntur soluta officiis quibusdam eos eius quae?
+
+        </p>
+      </section>
+
+   <!-- review-section -->
+   <section class="review-section">
+    <h1 class="section-title">Reviews</h1>
+    <div class="review-container">
+        <div class="review-card">
+            <div class="user-dp" data-rating="4.9"> <img src="/public/img/user 1.png" alt=""></div>
+            <h2 class="review-title">Best quality more than my expectations</h2>
+            <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tenetur!</p>
+        </div>
+        <div class="review-card">
+            <div class="user-dp" data-rating="4.9"> <img src="/public/img/user 2.png" alt=""></div>
+            <h2 class="review-title">On time delivery with best packaging</h2>
+            <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tenetur!</p>
+        </div>
+        <div class="review-card">
+            <div class="user-dp" data-rating="4.9"> <img src="/public/img/user 3.png" alt=""></div>
+            <h2 class="review-title">Very helpful customer support</h2>
+            <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tenetur!</p>
+        </div>
+        <div class="review-card">
+            <div class="user-dp" data-rating="4.9"> <img src="/public/img/user 4.png" alt=""></div>
+            <h2 class="review-title">Too easy to refund/Return Products</h2>
+            <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tenetur!</p>
+        </div>
+    </div>
+ </section>
+
+ <!-- Add review section form -->
+  <section class="add-review-section">
+    <h1 class="section-title">Add a review</h1>
+     <input type="text" class="review-headline" placeholder="Review Headline">
+     <textarea placeholder="Add a review" class="review-field"></textarea>
+     <p class="rating-text">How much you liked the product</p>
+     <div class="star-container">
+           <img src="/public/img/no fill star.png" class="rating-star" alt="">
+           <img src="/public/img/no fill star.png" class="rating-star" alt="">
+           <img src="/public/img/no fill star.png" class="rating-star" alt="">
+           <img src="/public/img/no fill star.png" class="rating-star" alt="">
+           <img src="/public/img/no fill star.png" class="rating-star" alt="">
+           
+     </div>
+     <button class="add-review-btn">Add Review</button>
+
+  </section>
+
+ <!-- Best selling product section -->
+ <section class="best-selling-product-section">
+    <h1 class="section-title"> Similar Products</h1>
+    <div class="product-container">
+        <div class="product-card">
+            <img src="/public/img/product-1.png" alt="product-1" class="product-img">
+            <p class="product-name">Lights ➜ </p>
+        </div>
+        <div class="product-card">
+            <img src="/public/img/product-2.png" alt="product-1" class="product-img">
+            <p class="product-name">Table ➜ </p>
+        </div>
+        <div class="product-card">
+            <img src="/public/img/product-3.png" alt="product-1" class="product-img">
+            <p class="product-name">Storage ➜ </p>
+        </div>
+        <div class="product-card">
+            <img src="/public/img/product-4.png" alt="product-1" class="product-img">
+            <p class="product-name">Couch ➜ </p>
+        </div>
+    </div>
+ </section>
+
+ <footer>
+    <h5>Copyright © 2024 Muhammad Atteq. All rights reserved. </h5>
+  </footer>
+  <script src="js/product.js"></script>
+</body>
+</html>
