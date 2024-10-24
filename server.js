@@ -21,6 +21,9 @@ app.get(`/`, (req, res) => {
 app.get(`/signup`, (req, res) => {
     res.sendFile("signup.html", { root: "public" })
 });
+app.post(`/signup`, (req, res) => {
+    res.sendFile("signup.html", { root: "public" })
+});
 
 
 app.get(`/404`, (req, res) => {

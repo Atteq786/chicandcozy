@@ -1,3 +1,14 @@
+.loader{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 5;
+    display: none;
+
+}
+
 .form-section{
     width: 100%;
     height: 100vh;
@@ -48,10 +59,90 @@ input{
     font-family: "lato", sans-serif;
     color: black;
     outline: none;
-
 }
 ::placeholder{
     color: #b9b9b9;
     text-transform: capitalize;
 }
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:focus{
+    border: 2px solid #d5be8b;
+}
+input:focus::placeholder{
+    color: #d5be8b;
+}
+.error{
+    display: block;
+    font-size: 0.8rem;
+    color: red;
+    margin: 5px 0;
+    font-family: "lato", sans-serif;
+    text-transform: capitalize;
+    user-select: none;
+    opacity: 0;
+}
+.error.show{
+    opacity: 1;
+}
+#tc{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: 1px solid #b9b9b9;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0;
+    border-radius: 3px;
+}
+#tc:checked{
+    background-color: #d5be8b;
+}
+#tc:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/check.png);
+    background-size: contain;
+    display: none;
+}
+#tc:checked::before{
+    display: block;
 
+}
+.tc-text{
+    margin-left: 5px;
+    font-size: 0.8rem;
+    font-family: "lato", sans-serif;
+}
+.tc-text a{
+    color: #000;
+}
+.submit-btn{
+    display: block;
+    margin: 20px 0;
+    width: 100px;
+    padding: 0.8rem;
+    border-radius: 0;
+    background-color: #d5be8b;
+    color: #ffff;
+    font-family: 'cinzel';
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+.other-form-link{
+    font-family: 'lato', sans-serif;
+    color: black;
+    font-size: 0.8rem;
+
+}
