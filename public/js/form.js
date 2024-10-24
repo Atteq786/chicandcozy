@@ -1,41 +1,41 @@
 let formBtn = document.querySelector(".submit-btn");
 let loader = document.querySelector(".loader");
 
-formBtn.addEventListener('click', () => {
-    let fullName = document.querySelector('#fullname');
+formBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    let fullname = document.querySelector('#fullname');
     let email = document.querySelector('#email');
     let password = document.querySelector('#password');
     let number = document.querySelector('#number');
     let tac = document.querySelector('#tc');
 
-    //form validation
-
+    // form validation
     if (fullname.value.length < 3) {
-        showFormError('Name must be 3 letters long');
+        alert('Name must be 3 letters long');
     }
     else if (!email.value.length) {
-        showFormError('enter your email');
+        alert('Enter your email');
     }
     else if (password.value.length < 8) {
-        showFormError('password must be greater  than 8 characters');
+        alert('Password must be greater than 8 characters');
     }
-    else if (Number(number) ||number.value.length < 11) {
-        showFormError('Invalid number! Please enter a valid number');
+    else if (isNaN(number.value) || number.value.length < 11) {
+        alert('Invalid number! Please enter a valid number');
     }
     else if (!tac.checked) {
-        showFormError('must agree to our terms and conditions');
+        alert('Must agree to our terms and conditions');
     }
     else {
-        //submit form
-
+        // Submit form
         loader.style.display = 'block';
-        sendData('/signup',  {
+
+        sendData('/signup', {
             name: fullname.value,
             email: email.value,
             password: password.value,
             number: number.value,
             tac: tac.checked
-        })
+        });
     }
-})
-
+});
